@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Drill Demo</title>
+        <META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="viewport" content="width=device-width, initial-scale=1.0" name ="viewport">
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css">
+    </head>
+    <body>
+        <div id="menuBG">
+            <h1 style="margin:0 0px 0 40px;">NS Pizza House</h1>
+            <style>h1 { background-color: #22e232; }</style>
+            <input id="btnOrder" type="button" onclick="getReceipt()"
+                value="Place Order">
+            <from id="frmMenu">
+                <div class="menu left">
+                    <h3>Size</h3>
+                    <input type="radio" name="size"
+                        value="Personal Pizza">Personal Pizza<br>
+                    <input type="radio" name="size"
+                        value="Medium Pizza">Medium Pizza<br>
+                    <input type="radio" name="size"
+                        value="Large Pizza">Large Pizza<br>
+                    <input type="radio" name="size"
+                        value="Extra Large Pizza">Extra Large Pizza<br>
+                </div>
+                
+                <div class="menu right">
+                    <h3>Meats:</h3>
+                    <input type="checkbox" name="Toppings"
+                        value="Pepperoni">Pepperoni<br>
+                    <input type="checkbox" name="Toppings"
+                        value="Sausage">Sausage<br>
+                    <input type="checkbox" name="Toppings"
+                        value="Canadian Bacon">Canadian Bacon<br>
+                    <input type="checkbox" name="Toppings"
+                        value="Ground Beef">Ground Beef<br>
+                    <input type="checkbox" name="Toppings"
+                        value="Chicken">Chicken<br>
+                    <input type="checkbox" name="Toppings"
+                        value="Anchovy">Anchovy<br>        
+                </div>
+                <div id="cart">
+                    <div id="showText">
+                    <div id="totalprice"></div>
+                </div>
+            </from>    
+        </div>
+    </body>
+</html>
